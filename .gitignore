@@ -1,6 +1,5 @@
 .python-version
 Storage/hadoop/
 Storage/hadoop-2.7.6/
-Storage/hadoop-2.7.6.tar.gz
 .ipynb_checkpoints
 docs.python.org
