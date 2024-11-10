@@ -2,6 +2,22 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+
+    // bootstrap
+    script(src="http://code.jquery.com/jquery-1.9.1.min.js")
+    link (rel="stylesheet" href "https://maxcdn.bootstrapcdn.com/bootstrap /3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/ jquery-ui.css")
+    link (rel="stylesheet" href="/stylesheets/style.css")
+    script(src="https://code.jquery.com/jquery-1.12.4.js")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+    
+    // plotly
+    script(src https://cdn.plot.ly/plotly-latest.min.js')
+
+    // visual js
+    script(src='/javascript/visual.js')
+    
   body
     block content

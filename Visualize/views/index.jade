@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  nav.navbar.navbar-default
+      .conteainer-fluid 
+        .navbar-header 
+          a.navbar-brand BigData Visualize 
+        ul.nav.navbar-nav
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', rolw='button', aria-haspopup='true', aria-expanded='false')
+              | AMD
+              span.caret
+            ul.dropdown-menu
+              link
+                a(onclick="loadDailyTable()") Daily Open 
+  
+  #date(align="center")
+    input.from-control.form-control-user#datepicker1(type="text", style = "width: 120px; text-align:center;")
+    label.label-user(stle="text-align: center;")
+    input.from-control.form-control-user#datepicker2(type="text", style = "width: 120px; text-align:center;")
+
+  br
+  .row
+    #myDiv(style="height: 680px; margin-left: 40px").col-md-11.col-sm-1.col-md-1.col-sm-1
